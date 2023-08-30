@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Country Cards</h1>
+      <select id="regionSelect">
+        <option value="all">All Regions</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+      </select>
+      <input type="text" id="filterInput" placeholder="Filter by name" />
+      <input id="searchInput" type="text" placeholder="Search by country name">
+      <button id="searchButton">Search</button>
+    </header>
+
+    <main id="countryContainer"></main>
+    <div class="pagination">
+      <a class="left" href="#"><</a>
+      <div class="paginationBody"></div>
+      <a class="right" href="#">></a>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
